@@ -300,7 +300,7 @@ footer {
 }
 
 .hero {
-  background-image: url("../../images/present/Frame.png");
+  background-image: url("../images/present/Frame.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: cover;
