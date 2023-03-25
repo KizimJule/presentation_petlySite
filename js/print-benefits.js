@@ -14,7 +14,7 @@
 let line = 0;
 let count = 0;
 let result = '';
-let text = 'Чому саме Filmoteka';
+let text = 'Чому саме petly';
 function typeLine() {
   let interval = setTimeout(() => {
     result += text[line][count];

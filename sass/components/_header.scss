@@ -3,78 +3,33 @@
 }
 
 .header-home {
-  width: 100vw;
-  margin: 0 auto;
-  padding-top: 12px;
-  background-image: url('../images/header/home-desk.jpg');
-  background-image: url('../images/header/home-mob.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100px;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 81px;
-  }
-}
-
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .header-home {
-    background-image: url('../images/header/home-mob@2x.jpg');
-  }
-}
-
-@media (min-width: 321px) {
-  .header-home {
-    background-image: url('../images/header/home-tab.jpg');
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .header-home {
-      background-image: url('../images/header/home-tab@2x.jpg');
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .header-home {
-    background-image: url('../images/header/home-desk.jpg');
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .header-home {
-      background-image: url('../images/header/home-desk@2x.jpg');
-    }
-  }
+  width: 100%;
+  background-color: $backgroundFooterColor;
+  height: 90px;
 }
 
 .logo {
   display: flex;
   align-items: center;
 }
-.logo-span {
-  font-size: 30px;
+.logo-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
   line-height: 1.16;
-  font-weight: 500;
+  font-weight: 700;
   margin-left: 8px;
-  color: $whiteColor;
+  color: $logoColor;
+}
+.logo-span {
+  color: $accentColor;
 }
 
-.icon-home {
-  stroke: $whiteColor;
-}
+// .icon-home {
+//   stroke: $whiteColor;
+// }
 .header-nav {
   @extend %flexBetweenCenter;
-  margin-right: auto;
+  margin: 0 auto;
 
   &__list {
     @extend %flexBetweenCenter;
@@ -94,14 +49,14 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: $whiteColor;
+    color: $logoColor;
     text-decoration: none;
 
     transition: color $generalAnimation;
 
     &:hover,
     &:focus {
-      color: $colorFocus;
+      color: $accentColor;
     }
   }
 }
@@ -111,7 +66,7 @@
 }
 
 .header-nav__link--current {
-  color: $currentColor;
+  color: $accentColor;
 }
 
 .contact-quickly {
@@ -152,4 +107,30 @@
 
 .contact-quickly__list:not(:last-child) {
   margin-right: 50px;
+}
+
+.team-head {
+  // text-align: center;
+  margin-left: 80px;
+  margin-top: 20px;
+  color: $accentColor;
+  font-size: 100px;
+
+  text-shadow: 1px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15),
+    0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero__photo {
+  // position: absolute;
+  // right: 0;
+  // bottom: 0;
+  display: block;
+  margin-left: 60vw;
+}
+
+.hero {
+  background-image: url('../../images/present/Frame.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: cover;
 }

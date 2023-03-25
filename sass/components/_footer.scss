@@ -1,14 +1,14 @@
 .footer {
   width: 100%;
-  background-color: #f7f7f7;
+  background-color: $backgroundFooterColor;
   // margin-bottom: -20px;
   // min-height: 20px;
 
   &__container {
     @extend .container;
 
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     font-size: 14px;
     font-weight: 400;
@@ -23,8 +23,8 @@
       display: flex;
       justify-content: center;
 
-      padding-top: 30px;
-      padding-bottom: 30px;
+      // padding-top: 20px;
+      // padding-bottom: 30px;
 
       font-size: 16px;
       line-height: 1.19;

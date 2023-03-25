@@ -1,7 +1,7 @@
 let line = 0;
 let count = 0;
 let result = '';
-let text = 'Наша команда: thisTeam';
+let text = 'Наша команда: LuckyOnes';
 function typeLine() {
   let interval = setTimeout(() => {
     result += text[line][count];
