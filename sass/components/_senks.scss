@@ -1,16 +1,10 @@
 .thanks {
-  &__title {
-    margin-bottom: 30px;
-  }
-
   &__list {
     display: flex;
-    margin: -10px;
     flex-wrap: wrap;
-    justify-content: space-around;
-
+    justify-content: center;
+    gap: 20px;
     @extend %listStyleNone;
-    flex-wrap: wrap;
   }
 
   &__descr {
@@ -26,10 +20,8 @@
     overflow: hidden;
 
     border: 1px solid transparent;
-    margin: 10px;
-
-    flex-basis: calc((100% - 400px) / 2);
-    height: 520px;
+    width: 330px;
+    height: 420px;
   }
 
   &__name {

@@ -1,8 +1,6 @@
 .footer {
   width: 100%;
   background-color: $backgroundFooterColor;
-  // margin-bottom: -20px;
-  // min-height: 20px;
 
   &__container {
     @extend .container;
@@ -22,10 +20,6 @@
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: center;
-
-      // padding-top: 20px;
-      // padding-bottom: 30px;
-
       font-size: 16px;
       line-height: 1.19;
 

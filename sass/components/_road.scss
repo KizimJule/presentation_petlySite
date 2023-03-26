@@ -5,11 +5,11 @@
 }
 .road__img {
   display: block;
-  margin: 0 auto;
-  & + & {
-    margin-left: 18px;
-  }
+  height: 500px;
 }
 .road__general {
   display: flex;
+  justify-content: center;
+  // margin: 0 auto;
+  gap: 10px;
 }

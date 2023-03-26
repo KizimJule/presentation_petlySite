@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Filmoteka</title>
+    <title>petly</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut icon" href="./images/favicon/favicon.ico" />
+    <!-- <link rel="shortcut icon" href="./images/favicon/favicon.ico" />
     <link rel="apple-icon" sizes="180x180" href="./images/favicon/favicon.png" />
-    <link rel="mask-icon" href="./images/favicon/favicon.svg" color="#ff6b08" />
+    <link rel="mask-icon" href="./images/favicon/favicon.svg" color="#ff6b08" /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
@@ -32,11 +32,12 @@
     <header class="header header-home">
       <div class="container header__container">
         <nav class="header-nav">
-          <a href="https://kyzym.github.io/this-team/" class="logo logo--up link" target="_blank">
-            <svg class="icon-home" width="24" height="24" style="stroke: white">
-              <use href="./images/sprite.svg#logo"></use>
-            </svg>
-            <span class="logo-span">Filmoteka</span>
+          <a
+            href="https://viacheslav-tykhovlis.github.io/petly-site/"
+            class="logo logo--up link"
+            target="_blank"
+          >
+            <h1 class="logo-text">Pe<span class="logo-span">t</span>ly</h1>
           </a>
 
           <ul class="header-nav__list">
@@ -72,23 +73,29 @@
         <div class="container container--shopper">
           <h1 class="title shopper__title"><span class="opacity">1</span></h1>
           <div class="shopper__general">
-            <div class="shopper__elements shopper__elements--one">
-              <img src="./images/present/3.jpg" alt="користувач" />
-            </div>
+            <picture class="shopper__elements">
+              <img
+                class="shopper__img"
+                src="./images/present/girl_and_dog.jpg"
+                alt="користувач"
+                width="600"
+                height="500"
+              />
+            </picture>
             <div class="shopper__elements">
-              <h2 class="shopper__name">Родина симпсонів</h2>
+              <h2 class="shopper__name">Ксенія</h2>
               <ul class="shopper__list">
-                <li class="shopper__item">Батько цілий день на роботі</li>
-                <li class="shopper__item">Мати домогосподарка</li>
-                <li class="shopper__item">Діти різного віку</li>
-                <li class="shopper__item">Захоплюються переглядом фільмів</li>
+                <li class="shopper__item">25 років</li>
                 <li class="shopper__item">
-                  Мають різні інтереси, зокремі полюбляюють різні жанри фільмів
+                  Любить бігати вранці по парку й взагалі полюбляє активний відпочинок
                 </li>
                 <li class="shopper__item">
-                  Потребують якісний сервіс пошуку фільмі, на якому можна обрати картини на будь
-                  який смак та вік
+                  Трішки застріть людям, що гуляють з собаками, яких бачить бід час пробіжок у парку
                 </li>
+                <li class="shopper__item">
+                  Хоче завести собаку, тому вивчає особливості порід та їх потреби
+                </li>
+                <li class="shopper__item">Шукає сервіс, де можна придбати собаку</li>
               </ul>
             </div>
           </div>
@@ -98,7 +105,7 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <span class="footer__top">&#169; 2022 | All Rights Reserved |&nbsp;</span>
+        <span class="footer__top">&#169; 2023 | All Rights Reserved |&nbsp;</span>
         <div class="footer__bottom">
           <span>Developed with</span>
           <svg width="14" height="13" class="icon-heart">

@@ -24,9 +24,6 @@
   color: $accentColor;
 }
 
-// .icon-home {
-//   stroke: $whiteColor;
-// }
 .header-nav {
   @extend %flexBetweenCenter;
   margin: 0 auto;
@@ -121,9 +118,6 @@
 }
 
 .hero__photo {
-  // position: absolute;
-  // right: 0;
-  // bottom: 0;
   display: block;
   margin-left: 60vw;
 }

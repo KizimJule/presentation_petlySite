@@ -1,9 +1,5 @@
 .benefits {
-  height: 100vh;
-
-  &__title {
-    margin-bottom: 30px;
-  }
+  // height: 100vh;
 
   &__general {
     display: flex;
@@ -14,7 +10,7 @@
   &__item {
     font-size: 28px;
     line-height: 1.3;
-    color: $currentColor;
+    color: $shopperLiColor;
     margin-bottom: 15px;
   }
 }

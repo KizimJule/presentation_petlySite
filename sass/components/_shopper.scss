@@ -1,34 +1,26 @@
 .shopper {
-  height: 100vh;
-
-  &__title {
-    margin-bottom: 30px;
-  }
-
   &__general {
     display: flex;
+    gap: 60px;
   }
 
   &__name {
-    color: $colorSenks;
+    color: $shopperColor;
     font-size: 34px;
     margin-bottom: 30px;
   }
 }
 
-.shopper__elements {
-  flex-basis: calc((100% - 40px) / 2);
-
-  &--one {
-    margin-right: 80px;
-  }
+.shopper__img {
+  border-radius: 50px;
+  margin-left: 20px;
 }
 
 .shopper__item {
   font-size: 24px;
-  color: $currentColor;
+  color: $shopperLiColor;
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
