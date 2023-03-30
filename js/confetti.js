@@ -1,9 +1,9 @@
 var confetti = {
-  maxCount: 300, //set max confetti count
+  maxCount: 350, //set max confetti count
   speed: 2, //set the particle animation speed
   frameInterval: 25, //the confetti animation frame interval in milliseconds
   alpha: 1.0, //the alpha opacity of the confetti (between 0 and 1, where 1 is opaque and 0 is invisible)
-  gradient: false, //whether to use gradients for the confetti particles
+  gradient: true, //whether to use gradients for the confetti particles
   start: null, //call to start confetti animation (with optional timeout in milliseconds, and optional min and max random confetti count)
   stop: null, //call to stop adding confetti
   toggle: null, //call to start or stop the confetti animation depending on whether it's already running
@@ -238,7 +238,7 @@ const start = () => {
 const stop = () => {
   setTimeout(function () {
     confetti.stop();
-  }, 8000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+  }, 80000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
 };
 // after this here we are calling both the function so it works
 start();
